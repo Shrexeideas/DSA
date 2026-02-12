@@ -1,25 +1,42 @@
 ## Day 1 – Arrays
 
 ### Maximum Subarray
- Mistake:
-- Initially tried brute force
+What went wrong:
+- First thought was brute force (checking all subarrays), which is too slow.
 
-Pattern:
-- Carry forward running sum
-- Drop negative prefix
+What I learned:
+- Keep a running sum.
+- If the sum becomes negative, it’s better to start fresh from the next element.
 
- Insight:
-- Negative sums reduce future subarrays
+Key takeaway:
+- A negative prefix only reduces future subarray sums.
 
----
 
-### Best Time Buy & Sell Stock
- Mistake:
-- Thought in all possible pairs
+### Best Time to Buy & Sell Stock
+What went wrong:
+- Initially thought about checking every buy–sell pair.
 
- Pattern:
-- Track minimum so far
-- Greedy one-pass scan
+What I learned:
+- Track the minimum price seen so far.
+- At each day, calculate profit if selling today.
 
- Insight:
-- Buy must come before sell
+Key takeaway:
+- Since buying must happen before selling, only past prices matter.
+
+## Day 2 – Two Pointers
+
+### Container With Most Water
+What went wrong:
+- Mixed brute force logic with two-pointer logic.
+- Confused `length` with `length - 1`.
+- Used `Math.min` instead of `Math.max` when updating the answer.
+- Missed some valid pairs because of wrong loop start.
+
+What I learned:
+- Start with two pointers at both ends.
+- The area is always limited by the shorter line.
+- Move the pointer pointing to the smaller height.
+
+Key takeaway:
+- `length` is the number of elements, `length - 1` is the last index.
+- Use `Math.min` for constraints and `Math.max` for tracking the best answer.
