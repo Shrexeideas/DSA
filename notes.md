@@ -40,3 +40,14 @@ What I learned:
 Key takeaway:
 - `length` is the number of elements, `length - 1` is the last index.
 - Use `Math.min` for constraints and `Math.max` for tracking the best answer.
+
+### Remove Element
+ Mistake:
+- Initially thought about deleting elements
+
+ Pattern:
+- Overwrite valid elements using write pointer
+
+ Insight:
+- Deletion in arrays is done by overwriting, not removing
+
