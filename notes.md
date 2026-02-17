@@ -51,3 +51,13 @@ Key takeaway:
  Insight:
 - Deletion in arrays is done by overwriting, not removing
 
+### Problem Solving Steps from Video
+1. Understand example
+2. Dry run manually
+3. Identify what to carry forward
+4. Use loop
+5. Modify array if needed
+
+🧠 Final Insight:
+- Most array problems are solved by traversal + carrying one variable
+
