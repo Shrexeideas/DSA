@@ -4,11 +4,8 @@
 What went wrong:
 - First thought was brute force (checking all subarrays), which is too slow.
 
-What I learned:
-- Keep a running sum.
-- If the sum becomes negative, it’s better to start fresh from the next element.
+What I learned:<img width="1229" height="539" alt="image" src="https://github.com/user-attachments/assets/0c4fd276-bab1-4e6a-abb8-3c5a51e11062" />
 
-Key takeaway:
 - A negative prefix only reduces future subarray sums.
 
 
